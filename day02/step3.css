@@ -1,0 +1,86 @@
+/*
+    어디에 {무엇을:어떻게;}
+    
+    1.어디의???
+        -css 선택자
+        1.*[와일드카드] -> 공통 : 모든 곳에 적용 
+            ex) *{color:red;}
+            설명 : 문서[HTML] 모든곳에 색상을 레드로
+        
+        2.마크업이름 -> 해당 마크업만 적용
+            ex) p{color:red;}
+            설명 : p태그에 색상을 레드로
+        
+        3.class 속성  -> [복수형] 해당 class명을 가지는 곳에 적용
+            ex) .class명{color:red;}
+            설명 : 클래스 명을 가진곳의 색상을 레드 로
+
+        4.id 속성  -> [단일형] 해당 id 명을 가지는 곳에 적용
+            ex) #id명{color:red;}
+            설명 : id명을 가진곳의 색상을 레드로
+        
+        -식별에 중복 속성이 있을때 우선순위 
+            * < 마크업 < class < id
+    
+    
+    2.무엇을
+        -속성 명
+    
+    3.어떻게
+        -속성 값
+*/
+
+/* 1. * 모든곳에 적용 */
+*{color:red;}
+
+/* 2. 마크업에 적용 */
+h4{color: yellow;}
+
+/* 3. class명에 적용 */
+.text1{color: blue;} 
+/*class 속성에 text1이라는 이름을 갖는 마크업에 폰트색을 블루*/
+
+/* 4. id명에 적용 */
+#text2{color: green;}
+/* id속성에 text2 라는 이름을 갖는 마크업에 폰트색을 그린*/
+
+
+body{background-color: aqua;}
+
+.title{
+font-family: 궁서;      /*글꼴*/
+font-size: 30px;        /*크기*/
+font-style: italic;     /*기울기*/
+font-weight: 100;       /*굵기*/
+}
+/* class속성에 title 이라는 이름을 갖는 마크업*/
+
+@font-face { /*외부 폰트*/
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.content{
+    font-family:YClover-Bold;     /*웹 폰트 지정*/
+    color:brown;                /*폰트색상*/
+    word-spacing: 5px;            /*어간*/
+    letter-spacing: 2px;          /*자간*/
+    line-height: 160% ;           /*줄높이*/
+}
+
+#writer{
+    text-align:center/*left*//*right*/;               /*텍스트 가로정렬*/
+    text-decoration: line-through/*취소선*/;           /*텍스트 선긋기*/
+                    /* line-through : 취소선 , underline : 밑줄 , overline : 윗줄*/
+    text-shadow: 1px 1px 5px red;
+    /*텍스트 그림자 : x축위치 , y축위치 , 흐림정도 , 색상*/
+}
+
+
+/* 색상 표시방법
+    1. color : red                  -> 색상이름
+    2. color : #FFEB33              -> 헥사코드[16진수]
+    3. color : rgb(251, 247, 17)    -> RGB색상[0~255사이 3칸]
+*/
