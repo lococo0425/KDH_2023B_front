@@ -1,0 +1,22 @@
+.pineapple{
+    width: 400px;
+}
+
+
+body{
+    border: 2px solid gray;
+    width: 500px;
+
+}
+
+.line1{
+    border-top: 2px solid gray;
+}
+h2{
+    padding: 20px 5px;
+}
+.price{
+    font-weight: bolder;
+}
+
+span{color: orange;}

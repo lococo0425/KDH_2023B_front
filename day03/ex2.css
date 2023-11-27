@@ -1,0 +1,37 @@
+
+.title{
+    font-size: large;
+    font-family: 고딕;
+    font-weight: bolder;
+    border-left: 5px solid green;
+    padding-left: 7px;
+}
+.content{
+    background-color: #e8e8e8;
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 30px; /* 안쪽여백 */
+    
+    
+}
+.contli{margin-bottom: 20px;}
+
+.info{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    margin: 20px 40px; /* 바깥여백 */
+}
+.contp{
+    border-bottom: 1px dotted gray;
+    padding-bottom: 10px;
+    line-height: 130%;    
+}
+.go{
+    text-align: right;
+    padding-top: 10px;
+    font-weight: bold;
+}

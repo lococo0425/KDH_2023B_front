@@ -1,0 +1,46 @@
+body{
+    /* 배경색 지정 */
+    background-color: #bbf1ef;
+    /* 폰트 지정 */
+    font-family: 고딕;
+}
+
+h1{ 
+    font-size: 25px ; /* 글자 크기 지정 */
+    border:3px solid white; /* 태두리 그리기 */
+    border-radius: 50px; /* 둥근모서리 만들기 */
+    padding: 6px 0; /* 안쪽여백 */
+    margin : 20px  auto; /* 바깥여백 + 박스 가운데 정렬 */
+    width: 300px;/* 너비 지정 */
+    text-align: center; /* 글자 가운대 정렬 */
+}
+
+p,ul
+/* 2개 이상의 선택자를 작성할때 , 를 사용한다 [공통 분분 작성할때] */
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* 이미지 둥글게 만들기 */
+img{border-radius: 100px;}
+
+p{
+    font-size: 18px; 
+}
+/* a태그 */
+a{background-color: #ff9a9e ;
+display: block;
+padding: 20px 0;
+border-radius: 20px;
+color:#ffffff;
+font-weight: bold; /* 글꼴 진하게 */
+text-decoration: none; /* 밑줄 제거하기 */
+}
+/* 리스트 */
+ul{
+    width: 300px;
+    margin:0 auto
+}
+li{
+    margin-bottom: 20px;
+}

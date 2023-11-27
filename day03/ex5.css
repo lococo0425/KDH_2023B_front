@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+width: 500px;
+
+}
+.insta{border: 1px solid gray;}
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text1{
+    width: 300px;
+    padding: 10px;
+    margin: 4px;
+}
+
+.login{
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    background-color: skyblue;
+    width: 300px;
+    margin: 10px auto;
+    
+}
+
+.facelogo{
+    width: 18px;
+}
+
+.facelogin{
+    font-size: 18px;
+    padding: 10px;
+    text-decoration-line:none;
+}
+a{
+    padding:10px;
+    color: blue;
+    text-decoration:none;
+}
+.pass{
+    color: cadetblue;
+}
+.passw{
+    padding-bottom: 10px;
+}
+.signup{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    font-weight: bolder;
+}
