@@ -91,3 +91,30 @@ CSS : 캐스케이딩(상속) 스타일 시트 (Cascading Style Sheets)
             inline+block
         
         display: none                   : 표시안함
+
+        display: flex;                  : 하위 요소들을 배치 
+            1.flex-wrap                 : 하위요소 줄바꿈 여부
+                    nowrap              : 하위요소 줄바꿈 X
+                    wrap                : 하위요소 줄바꿈 O
+                    wrapwrap-reverse    : 하위요소 줄바꿈 O + 역방향
+            
+            2.flex-derection            :하위요소들을 배치 방향
+                    row                 :하위요소 가로배치
+                    column              :하위요소 세로배치
+                    row-reverse         :하위요소 가로배치 역방향
+                    column-reverse      :하위요소 세로배치 역방향
+            
+            3. justify-content          :하위요소들을 가로정렬
+                    flex-start          :왼쪽부터 정렬
+                    flex-end            :오른쪽부터 정렬
+                    center              :가운데 정렬
+                    space-between       :양쪽끝에 여백없이 사이 여백 균등정렬
+                    space-around        :양쪽끝에 여백은 절반으로 하고 사이 여백 균등정렬
+                    space-evenly        :양쪽 끝에 여백과 사이 여백 균등정렬
+            
+            4. align-items              :하위요소들을 세로정렬
+                    stretch             :(기본값) 부모의 높이만큼 자동으로 늘어남
+                    flex-start          :윗변정렬
+                    flex-end            :밑변정렬
+                    center              :중앙정렬
+                    baseline            :내용물 아래기준 정렬
