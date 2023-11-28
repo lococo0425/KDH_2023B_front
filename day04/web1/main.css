@@ -88,4 +88,6 @@ ul{padding: 0; margin: 0;}
 }
 #ft_box{
     width: 1280px; margin: 0 auto;
+    padding: 20px 0;
+    align-items: center;
 }

@@ -1,0 +1,57 @@
+
+/* li 헤더 제거, a태그 하이퍼링크 색상,밑줄제거, ul 들여쓰기제거 */
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+ul{padding:0px;margin: 0px;}
+
+
+/* header part */
+#header{
+    width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#top_menu{
+    text-align: right;
+    padding: 10px;
+}
+
+#bottom_menu ul{
+    font-size: 25px;
+    padding: 20px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+/* header end */
+
+
+
+/* footer part */
+#footer{
+    background-color: #05354E;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#ft_box{
+    width: 1280px;
+    display: block; margin: 0 auto;
+}
+
+#ft_box1 ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.white{
+    color: white;
+}
+#ft_box2{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* footer end */
