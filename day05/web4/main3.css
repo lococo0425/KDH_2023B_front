@@ -1,7 +1,7 @@
 
 /* header start */
 .test01{
-    width: 1280px;
+    
     margin: 0 auto;
 }
 #header p a{text-decoration-line: none;
@@ -61,6 +61,12 @@
 /* main start */
 #main3{
     display: flex; 
+
+}
+#cal{display: flex;
+justify-content: center;}
+#cal{
+    margin: 0 auto;
 }
 #mtable{
     width: 800px;
@@ -85,6 +91,7 @@ table tr td{border-bottom: 1px solid black;}
 }
 
 #main3_info{
+    
     padding-top: 20px;
     padding-left: 30px;
     line-height: 160%;
@@ -99,6 +106,8 @@ table tr td{border-bottom: 1px solid black;}
     color: green;
     font-weight: bolder;
 }
+
+
 /* main end */
 
 
