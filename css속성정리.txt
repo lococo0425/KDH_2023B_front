@@ -27,8 +27,14 @@ CSS : 캐스케이딩(상속) 스타일 시트 (Cascading Style Sheets)
         * < 마크업 < class < id
 
 3. CSS 속성 종류
-    1.background-color : 배경색
+    1.background-color                      : 배경색
+    2.background-image : url("이미지경로")   : 배경이미지
+        -background-repeat:                 : 여백이 있을 경우 배경 반복
+            repeat[기본값], no-repeat
+        -background-position                : 배경 이미지 위치
+
     ==========폰트===========
+
     2.font-family :     폰트
     3.font-size :       폰트크기 [px : 픽셀]
     4.font-style :      기울기
@@ -44,6 +50,8 @@ CSS : 캐스케이딩(상속) 스타일 시트 (Cascading Style Sheets)
     12.text-shadow :    x축 y축 흐림정도 색상   : 텍스트 그림자 
         -(x축 y축 흐림정도 색상)
 
+
+    13.list-style-type      :글머리 기호
 4. css 색상 표현 방법
     1. 색상 이름 : red 
     2. 헥사코드 : #ffffff
@@ -75,6 +83,7 @@ CSS : 캐스케이딩(상속) 스타일 시트 (Cascading Style Sheets)
         box-sizing : border-box : 포함O
     
     5.width                             : 가로사이즈
+   
     6.height                            : 세로사이즈
     
     7.display                           : 배치 방법
@@ -93,6 +102,7 @@ CSS : 캐스케이딩(상속) 스타일 시트 (Cascading Style Sheets)
         display: none                   : 표시안함
 
         display: flex;                  : 하위 요소들을 배치 
+
             1.flex-wrap                 : 하위요소 줄바꿈 여부
                     nowrap              : 하위요소 줄바꿈 X
                     wrap                : 하위요소 줄바꿈 O
@@ -118,3 +128,10 @@ CSS : 캐스케이딩(상속) 스타일 시트 (Cascading Style Sheets)
                     flex-end            :밑변정렬
                     center              :중앙정렬
                     baseline            :내용물 아래기준 정렬
+
+   
+    8.bow-shadow               :박스모델 그림자
+                (X축 y축 흐림정도 색상)
+    
+    9.overflow                      : 하위요소가 상위요소 보다 커질때 사용
+        visible[기본값], hidden, scroll, auto
