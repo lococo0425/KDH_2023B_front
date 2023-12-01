@@ -1,0 +1,177 @@
+
+
+
+/* =============공통부분============= */
+*{
+    padding: 0px; margin: 0px; /* 기본여백제거 */
+    font-family: 굴림;          /* 폰트지정 */
+    box-sizing: border-box;     /* 안쪽여백,테두리를 포함한 사이즈 박스 */
+    font-size: 16px;
+}
+
+a{ color: black; text-decoration: none;} /* a태그의 색상, 밑줄 제거 */
+li{list-style-type: none;}                  /* 글머리 제거 */
+/* =============헤더============= */
+
+#topMenu {
+    display: flex;
+    flex-direction: row; /* 가로배치 */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px; margin-right: 10px;
+}
+
+#topMenu > li > span{
+    padding: 0px 5px;
+}
+
+#mainMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;  top:0px;
+    /* sticky 주의사항
+        1. 상위 요소의 높이 사이즈 안에서 고정 **
+        2. 위치 속성 필수[한개이상]
+        3. 상위 요소가 overflow 속성 사용 금지 
+    */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#mainMenu > ul{
+    display: flex; justify-content: space-between; align-items: center;
+    font-weight: bold;
+    width: 1100px;
+    font-size: 18px;
+}
+#mainMenu >form{border-bottom: 1px solid black;}
+
+#mainMenu >form >input{border: none; padding: 8px; font-size: 16px;
+    background-color: transparent;/* 투명색 */
+}
+
+.colorRed{color: red;}
+
+*:focus{outline: none;} /* 커서가 있을때 아웃라인 제거 */
+
+#mainMenu >form >img{
+    height: 20px;
+}
+/* 드랍메뉴 만들기 start */
+#mainMenu > ul > li{
+    position: relative;
+}
+#mainMenu > ul > li:hover .subMenu{
+    display: block;
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    top: 15px; left:-30px;
+    background-color: white;
+    padding-top: 25px; width: 100px;
+}
+.subMenu li{
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* 드랍메뉴 만들기 end */
+
+/* =============본문============= */
+
+#mainImg{width: 100%;}
+
+#mainWrap{width: 1620px; margin: 100px auto; }
+
+#mainWrap .title{
+    font-size: 18px; font-weight: bold;
+    text-align: center;
+}
+#mainWrap .comment{
+    text-align: center; color: #858585;
+    margin-top: 20px; 
+}
+#mainWrap .items{margin-top: 50px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.item{
+    /* 한줄에 4개씩 아이템 배치 => 부모사이즈/4 */
+    width: 360px;
+    margin-bottom: 100px;
+}
+.item > img{width: 100%;}
+.colorReview{
+    display: flex; justify-content: space-between; padding: 5px;
+}
+.colorReview > .review{color: #999999;}
+.colorReview > .color > span{
+    width: 10px; height: 10px;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+}
+.nameSize{margin: 10px 0px 20px 0px;}
+.nameSize .prdSize{font-size: 10px; color: #999999;}
+.price > del{color: #999999;}
+.price{position: relative; margin-bottom: 10px;}
+.price > .discount{
+    position: absolute;
+    right: 0px; top: 0px;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* =============푸터============= */
+#footer #inner{
+    width: 1400px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    padding: 50px 0px 70px 0px;
+}
+
+/* 상단푸터 */
+#footer{
+    background-color: #f7f7f7;
+}
+
+#footer #inner>div{
+
+}
+#footer #inner h3{
+    font-size: 16px; font-weight: bold;
+    margin: 20px 0;
+}
+
+/* 하단푸터 */
+#addr{text-align: center; margin: 20px 0px 50px 0; color: #999999;}
+
+
+/* ==========popup========== */
+
+#popup{
+    position: fixed;
+    right: 0px;
+    top: 40%;
+}
+#popup > li{
+    width: 25px; height: 25px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+}
+#popup > li > img{height: 20px;}
+#popup > li > span{
+    position: absolute;
+    top: 5px; right: 25px;
+    font-size: 10px;
+    width: 70px; height: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    display: none;
+}
+
+#popup > li:hover .popupSub{
+    display: block;
+}
+
