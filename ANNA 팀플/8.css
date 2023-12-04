@@ -1,4 +1,4 @@
-a{color: black; text-decoration: none;}
+/* main CSS best50페이지 */
 
 /* 헤더 상단 s */
 #header{padding: 30px;}
@@ -29,14 +29,14 @@ a{color: black; text-decoration: none;}
 }
 .h_logo{display: block;
     margin: 0 auto;
-    width: 1100px;
+    width: 1260px;
     margin-bottom: 30px;
     margin-top: 60px;
 
 }
 /* 헤더 상단 e */
 /* 헤더 카테고리 메뉴 s */
-#h_menu{width: 1100px;
+#h_menu{width: 1260px;
     margin: 0 auto;
     margin-bottom: 50px;
     font-size: 12px;
@@ -62,10 +62,36 @@ a{color: black; text-decoration: none;}
 
 /* 헤더 카테고리 메뉴 e */
 
+a{text-decoration: none; color: black;}/* a태그 기본값 */
 
+#wrap7{     /* 페이지 총 사이즈 */
+    width: 1100px;
+    margin: 0 auto;
+}
 
+a{text-decoration: none; color: black;}/* a태그 기본값 */
 
-#main8{width: 1400px; margin: 0 auto;}
+#wrap7{     /* 페이지 총 사이즈 */
+    width: 1280px;
+    margin: 0 auto;
+}
+                                        /* BEST50 부분 */
+#cell7{     /* 맨위 전체 테두리 */
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0 ;
+    margin: 0 auto 100px;
+}
+    #imgCell7{border-right: 1px solid #eaeaea;
+        padding: 0 18px 0 0;
+    }
+    #imgBest7{width: 100%;}
+    #align7 a, span{font-size: 12px; color: #999999;}/* 글자색 */
+a{color: black; text-decoration: none;}
+#main8{width: 1280px; margin: 0 auto;}
     
     h1{font-size: 18px; text-align: center;
         padding-top: 100px;padding-bottom: 60px;}
@@ -73,7 +99,7 @@ a{color: black; text-decoration: none;}
     #bar8{
         display: flex;
         margin: 0 auto;
-        width: 1200px; padding: 10px 0;
+        width: 1280px; padding: 10px 0;
         border: 1px solid #e8e8e8;
         align-items: center;
     }
@@ -85,7 +111,7 @@ a{color: black; text-decoration: none;}
     
     #conditionBar8{
         display: flex;
-        width: 1200px;
+        width: 1280px;
         margin: 20px auto 40px;
         border: 1px solid #e8e8e8;
         padding: 5px;}
@@ -119,7 +145,7 @@ a{color: black; text-decoration: none;}
                     #conditionTextBox>a:hover{color: #999; text-decoration: none;}
 
     #quickbar8{
-        width: 1210px; margin: 0 auto;
+        width: 1280px; margin: 0 auto 50px;
         display: flex;
         justify-content: space-between;
     }
@@ -289,3 +315,4 @@ width: 400px;}
 .ft_bot2{text-align: right;
 
 }
+        

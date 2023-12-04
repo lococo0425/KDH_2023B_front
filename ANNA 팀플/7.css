@@ -29,14 +29,14 @@
 }
 .h_logo{display: block;
     margin: 0 auto;
-    width: 1100px;
+    width: 1260px;
     margin-bottom: 30px;
     margin-top: 60px;
 
 }
 /* 헤더 상단 e */
 /* 헤더 카테고리 메뉴 s */
-#h_menu{width: 1100px;
+#h_menu{width: 1260px;
     margin: 0 auto;
     margin-bottom: 50px;
     font-size: 12px;
@@ -65,7 +65,14 @@
 a{text-decoration: none; color: black;}/* a태그 기본값 */
 
 #wrap7{     /* 페이지 총 사이즈 */
-    width: 1480px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+a{text-decoration: none; color: black;}/* a태그 기본값 */
+
+#wrap7{     /* 페이지 총 사이즈 */
+    width: 1280px;
     margin: 0 auto;
 }
                                         /* BEST50 부분 */
@@ -127,7 +134,13 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
         color: black;
         width: 30px; height: 30px;
         text-align: center;}
-        .pageTyep7:hover{background-color: black; color: white;}
+        .pageTyep7:hover{
+            background-color: black; color: white;
+            transition-property: background-color;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            transition-delay: 0ms;}
+        
     
     .pageTyepNo7{
         padding-top: 4px;
@@ -137,7 +150,24 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
         background-color: white;
         color: black;
         text-align: center;}
-        .pageTyepNo7:hover{background-color: black; color: white;}
+        .pageTyepNo7:hover{background-color: black; color: white;
+            transition-property: background-color;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            transition-delay: 0ms;}
+    .pageTyepNo17{
+        padding-top: 4px;
+        width: 30px; height: 26px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        color: black;
+        text-align: center;}
+        .pageTyepNo17:hover{background-color: black; color: white;
+            transition-property: background-color;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            transition-delay: 0ms;}
     #spacebar7{margin: 5px;}
 
     /* -----------------Popup CSS------------------ */
@@ -197,7 +227,8 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
             align-items: center;
         }
         .popupForm7:hover .popupText7{display: block;}
-        .popupForm7:hover .popupTextVer27{display: flex;}
+        .popupForm7:hover .popupTextVer27{display: block;}
+
 
 /* footer st */
 #footer{background-color: white;  margin: 0 auto;
@@ -240,3 +271,4 @@ width: 400px;}
 .ft_bot2{text-align: right;
 
 }
+        
