@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <!-- p.84~ 기본자료형 -->
+    <script>
+        //p.85 문자열 만들기
+        //1. 작은 따옴표 감싸기
+        console.log('안녕하세요1');
+        //2. 큰 따옴표 감싸기
+        console.log("안녕하세요2");
+        //3. 문자열 안에 작은 따옴표 표현
+        console.log("안녕하세요'3'");
+        //4. 문자열 안에 큰 따옴표 표현 
+        console.log('안녕하세요"4"')
+
+        //p.86 이스케이프/제어 문자
+        //1.줄바꿈
+        console.log("안녕하세요5\n안녕하세요6")
+        //2.들여쓰기
+        console.log("안녕하세요7\t안녕하세요8")
+        //3.따옴표 사용하기
+        console.log("안녕하세요9\"안녕하세요10")
+        
+
+        //예제 1
+        console.log("\\\t/\\");
+        console.log(")\t( ')");
+        console.log("(\t/ )");
+        console.log("\\\(__)|");
+        
+        //예제 2
+        console.log("|\\_/|");
+        console.log("|q p|\t\\}");
+        console.log("( 0 )\"\"\"\\");
+        console.log("|\"^\"`\t|");
+        console.log("||_/=\\\\__|");
+
+        //p.87 문자열 연산자
+        console.log("가나다"+"라마"+"바사아"+"자차카타"+"파하");
+        //p.88 인덱스
+        console.log("안녕하세요"[0]);
+        console.log("안녕하세요"[3]);
+        //p.88 문자열 길이 구하기 
+        console.log("안녕하세요".length);
+        console.log("안녕하세요"[6]); // undefined => 해당 위치에 없으므로 undefined
+        console.log("          ".length); // 공백도 문자 처리
+        
+        //p.89 숫자 자료형
+        console.log(273); /* 숫자열 */ /* vs */ console.log("273")//문자열
+
+        console.log(52.273); //숫자(실수)
+
+
+    </script>
+
+
+</body>
+</html>
