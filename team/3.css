@@ -27,14 +27,14 @@
 }
 .h_logo{display: block;
     margin: 0 auto;
-    width: 1100px;
+    width: 1260px;
     margin-bottom: 30px;
     margin-top: 60px;
 
 }
 /* 헤더 상단 e */
 /* 헤더 카테고리 메뉴 s */
-#h_menu{width: 1100px;
+#h_menu{width: 1260px;
     margin: 0 auto;
     margin-bottom: 50px;
     font-size: 12px;
@@ -309,12 +309,13 @@ tbody td >#wkdqkrnslImg{
 }
 
 #footer .ftInner {
-    width: 1100px; margin: 0 auto;
+    width: 1260px; margin: 0 auto;
 }
 
 .footer_top{
     display: flex;
-    padding: 20px;
+    padding: 20px 0;
+    font-size: 12px;
 }
 .footer_top a{color: black; text-decoration-line: none;}
 
@@ -344,3 +345,61 @@ width: 400px;}
 .ft_bot2{text-align: right;
 
 }
+/* -----------------Popup CSS------------------ */
+#popupCell7{
+    width: 200px;
+    position: fixed;
+    right: 15px; bottom: 8%;
+}
+    .popupForm7{
+        width: 200px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .popupImg7{
+        margin-top: 10px; margin-bottom: 10px;
+        display: flex;
+    }/* 이미지간격 */
+    #buttonImg7{
+        margin-top: 10px; margin-bottom: 10px;
+        width: 45px;
+    }
+    #buttonImgVer27{
+        margin-top: 10px; margin-bottom: 10px;
+        width: 45px;
+        transform: rotate(180deg);
+    }
+    
+    
+    .popupText7{
+        position: absolute;
+        top: 35%; right: 17%;
+        font-size: 13px;
+        color: black;
+        background-color: yellow;
+        width: auto; height: 18px;
+        border: 1px solid rgb(255, 187, 0);
+        border-radius: 5px;
+        text-align: center;
+        padding : 3px 5px;
+        display: none;
+    }
+    .popupTextVer27{
+        position: absolute;
+        top: 30%; right: 17%;
+        font-size: 13px;
+        color: white;
+        background-color: rgb(83, 83, 83);
+        width: auto; height: 18px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        padding : 3px 5px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .popupForm7:hover .popupText7{display: block;}
+    .popupForm7:hover .popupTextVer27{display: block;}
