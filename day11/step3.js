@@ -93,24 +93,36 @@ function 문제7함수(){
     let val2 = Number(document.querySelector("#input2").value);
     let val3 = Number(document.querySelector("#input3").value);
 
-    let result = ""
+//     let result = ""
     
-    if(val1<val2){
-        if(val2<val3){
-           result=  document.querySelector("#result").innerHTML =`${val1} ${val2} ${val3}`
-        }else{
-            if(val1<val3){
-                result= document.querySelector("#result").innerHTML =`${val1} ${val3} ${val2}`
-            }else{result= document.querySelector("#result").innerHTML =`${val3} ${val1} ${val2}`}
-        }
-    }else{if(val2>val3){
-        result= document.querySelector("#result").innerHTML =`${val3} ${val2} ${val1}`
-    }else{if(val1<val3){
-        result= document.querySelector("#result").innerHTML =`${val2} ${val1} ${val3}`
-    }else{
-        result= document.querySelector("#result").innerHTML =`${val2} ${val3} ${val1}`
-    }
-    }
-}
-document.querySelector("#result").innerHTML =`${result}`
+//     if(val1<val2){
+//         if(val2<val3){
+//            result=  document.querySelector("#result").innerHTML =`${val1} ${val2} ${val3}`
+//         }else{
+//             if(val1<val3){
+//                 result= document.querySelector("#result").innerHTML =`${val1} ${val3} ${val2}`
+//             }else{result= document.querySelector("#result").innerHTML =`${val3} ${val1} ${val2}`}
+//         }
+//     }else{if(val2>val3){
+//         result= document.querySelector("#result").innerHTML =`${val3} ${val2} ${val1}`
+//     }else{if(val1<val3){
+//         result= document.querySelector("#result").innerHTML =`${val2} ${val1} ${val3}`
+//     }else{
+//         result= document.querySelector("#result").innerHTML =`${val2} ${val3} ${val1}`
+//     }
+//     }
+// }
+// document.querySelector("#result").innerHTML =`${result}`
+
+    if(val1>val2){let temp=val1; val1=val2; val2=temp; }
+    if(val1>val3){let temp=val1; val1=val3; val3=temp; }
+    if(val2>val3){let temp=val2; val2=val3; val3=temp; }
+    document.querySelector("#result").innerHTML =`${val1} ${val2} ${val3}`
+
+
+
+
+
+
+
 }
