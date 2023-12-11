@@ -1,6 +1,11 @@
 #main_index{
    margin: 30px;
-    
+   color: black; font-weight: bold;
+}
+
+#htmlCssBox a{
+    text-decoration: none;
+    color: black;
 }
 #htmlCssBox{
     border: 2px solid black;
