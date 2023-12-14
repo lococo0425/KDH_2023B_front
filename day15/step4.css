@@ -1,0 +1,51 @@
+*{font-size: 16px;
+box-sizing: border-box;
+}
+h1{text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #00ECAE;
+    padding: 10px;
+}
+#wrap{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#moneyIn{
+    display: flex;
+    margin-bottom: 40px;
+}
+#moneyIn > .btn > input[type="button"]{
+  height: 70px;
+  width: 90px;
+  margin-left: 10px;
+  background-color: #00ECAE ;
+  border-radius: 10px;
+}
+.MoneyOut{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.MoneyOut, #moneyOut{
+    width: 400px;
+}
+
+.MoneyOut > * {display: block; width: 25%; text-align: center;}
+
+.button> input[type="button"]{ 
+    border: none;
+    font-weight: bold;
+    background-color: white;
+}
+
+#tPr{
+    background-color: #00ECAE;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
