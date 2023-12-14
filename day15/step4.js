@@ -56,5 +56,5 @@ function 합계() {
     
     html1 += `${a}`;
     
-    tPr.innerHTML = html1;
+    tPr.innerHTML =`총 합계 :  ${html1}`;
 }
