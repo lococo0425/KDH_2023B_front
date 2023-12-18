@@ -13,7 +13,7 @@ const boardArray = [];
 //1.[c]글쓰기 [글쓰기 버튼을 클릭했을때]
 function 글쓰기(){ //매개변수 : X, 리턴값 : X
     //1.HTML로 부터 입력받은 값 가져오기
-    const writer = document.querySelector('#writer').value
+    const writer = document.querySelector('#writer').value //html에 설정된 id를 js로 가져옴
     const password = document.querySelector('#password').value
     const title = document.querySelector('#title').value
     const content = document.querySelector('#content').value
