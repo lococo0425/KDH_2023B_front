@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step2.css'>
+
+</head>
+<body>
+    
+
+    <div id="wrap">
+        <div id="header">
+                <img src="img/main3.png"/>
+            <ul>
+
+            </ul>
+        </div>
+        <div id="main">
+            
+            <div id="productBox">
+                <!-- 제품1개 -->
+                <div class="product">
+
+                </div>
+            </div>
+
+            <div id="cartBox">
+                <div id="cartContent">
+
+                    <div id="cartTop">
+                        <div>카트 <span id="count">0</span></div>
+                        <div>총주문금액 : <span id="total">0원</span></div>
+                    </div>
+
+                    <div id="cartBottom">
+
+                      
+                    </div>
+
+                </div>
+
+                <div id="orderBtn">
+                    <input type="button" value="취소하기"/>
+                    <input onclick="payMent()" type="button" value="주문하기"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="commendWrap">
+        <h3>관리자구역</h3>
+        <div id="commendCP">
+            <div id="plusC">
+                카테고리 추가 : 
+                <input class="cnonum" type="text" placeholder="cno">
+                <input class="categoryText" type="text" placeholder="카테고리 추가">
+                
+            </div>
+            <input onclick="plusC()" type="button" value="등록">
+
+            <div id="plusP">
+                제품추가
+                <input class="Pcno" type="text" placeholder="cno">
+                <input class="Ppno" type="text" placeholder="pno">
+                <input class="Ptext" type="text" placeholder="제품이름">
+                <input class="Pprice" type="text" placeholder="제품가격">
+                <input class="Pimg" type="text" placeholder="제품이미지">
+                
+            </div>
+            <input onclick="plusP()" type="button" value="등록">
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>주문번호</tr>
+                    <tr>주문날짜</tr>
+                    <tr>주문상태</tr>
+                    <tr>제품명</tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src='step2.js'></script>
+</body>
+</html>

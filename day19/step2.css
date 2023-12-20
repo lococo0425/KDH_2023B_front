@@ -1,0 +1,124 @@
+
+
+*{margin: 0px; padding: 0px;}
+li{
+    list-style: none;
+}
+
+/* 전체구역 */
+#wrap{
+    width: 700px;
+    margin: 0 auto;
+}
+/* 헤더 이미지 */
+#header > img{width: 100%;}
+/* 헤더 카테고리 */
+#header > ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+/* 선택된 카테고리 표시하기 */
+#header > ul > .selectMenu{
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+    color: red; font-weight: bold;
+}
+/* 제품 목록 구역 */
+#productBox{
+    display: flex;
+    flex-wrap: wrap; /*줄바꿈 처리*/
+    height: 520px; /* 부모요소 사이즈 고정 */
+    /* 자식 요소들이 고정 사이즈의 부모요소보다 커졌을때 */
+    overflow-y: scroll; /* 세로 스크롤 생성 */
+}
+/* 제품 구역 */
+#productBox > .product{
+    width: 148px;
+    margin: 22px 10px;
+}
+
+#productBox > .product > img{width: 100%;}
+
+#productBox > .product > .pInfo{
+    text-align: center;
+}
+
+#productBox > .product > .pInfo>.pName{
+font-weight: bold;
+}
+
+#productBox > .product > .pInfo>.pPrice{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* 카트 구역 버튼 */
+#orderBtn{display: flex;}
+#cartBox > #orderBtn > input {
+    width: 100%; height: 50px;
+    font-size: 20px; border: none;
+    color: white; font-weight: bold;
+}
+/* 자식요소가 여러개일때[형제가 여러개일때] */
+/* -자식요소선태자:nth-child(인덱스(1부터)) */
+#orderBtn > input:nth-child(1){
+    background-color: black;
+}
+#orderBtn > input:nth-child(2){
+    background-color: red;
+}
+
+/* 카트정보의 상단부분 */
+#cartContent{
+    background-color: #EEEEEE;
+}
+#cartTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+#cartBottom{
+    display: flex; overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+#cartBottom > .citem{
+    min-width: 150px; /* 고정 최소 사이즈 설정 */
+    background-color: white; margin: 10px;
+    padding: 7px;
+    position: relative;
+}
+#cartBottom > .citem >span{
+    position: absolute;
+    top: 8px; right: 10px;
+}
+#cartBottom > .citem > div:nth-child(1){
+    width: 130px;
+    height: 70px;
+}
+#cartBottom > .citem > div:nth-child(2){
+  color: red; font-weight: bold;
+}
+#cartTop > div:nth-child(1)> span{
+    background-color: red;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 5px; width: 30px; text-align: center;
+    color: white;
+}
+#cartTop > div:nth-child(2)> span{
+    color: red; font-weight: bold;
+}
+
+
+
+#commendWrap{
+    width: 700px;
+    margin: 0 auto;
+}
+#commendWrap >h3{
+    text-align: center;
+}
+
+
