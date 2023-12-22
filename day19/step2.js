@@ -176,10 +176,3 @@ function printCart(){
 장바구니 내역을 결재라는 배열에 넣고 출력하기
 
 */
-
-const payment = [];
-
-function payMent(){
-    payment.push(cartArray)
-    console.log(payment)
-}
