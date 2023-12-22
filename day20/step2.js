@@ -31,7 +31,7 @@ console.log(stringB);
 console.log(stringA.trim());
 console.log(stringB.trim());
 
-//.split()
+//.split(기준문자열) 기준 문자열 기준으로 분해후 배열에 반환 
 const timeList = "12:30\n15:21"
 console.log(timeList)
 const timeArray = timeList.split('\n')
@@ -45,7 +45,12 @@ console.log(timeObjcet);
 
 //JSON 객체 
     // js의 객체처럼 자료를 표현 하는 방식 
+        //JSON 다른 애플리케이션과 통신할때 데이터 교환 목적 사용
+        //1.js 객체 --> JSON 문자열  -->  : JSON.stringify()
 
+    //  localStorage 브라우저에 저장, 브라우저 자체가 꺼지면 사라짐, 다른 탭에서 공유됌
+    //  sessionStorage 브라우저에 저장, 탭이 꺼지면 메모리도 사라짐, 같은 탭에서 공유됌
+    
 
 
 
