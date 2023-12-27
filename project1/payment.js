@@ -43,19 +43,21 @@ function payment(){
     //1.어디에
     const payMent = document.querySelector("#print")
     //2.무엇을 //cart배열에 있는 배열값을 pay 배열로 이동 
+    
 
     for(let i = 0; i<cart.length; i++){
-    pay.push(cart[i]);
-   };
-   console.log(pay)
+         pay.push(cart[i]);
+    };
+    const json = JSON.stringify(pay)
+    console.log(pay)
     //3.출력
-    const html =`Pay: [${pay.join(', ')}]`
+    const html =`${json}`
     payMent.innerHTML = html;
     console.log(cart)
     //cart.length =0;    // 장바구니 초기화.
     totalPrice()
 }
-//질문 추가된 배열 합계가 안뜸....
+
 function totalPrice(){
     //1.어디에
     const totalP = document.querySelector("#totalPrice > span");
@@ -70,6 +72,8 @@ function totalPrice(){
     totalP.innerHTML=totalprice;
     console.log(totalprice);
 
+    return totalprice;
+
 }
 
 
@@ -80,7 +84,11 @@ function successPayment(){
     enterpay = Number(enterpay);
 
     let totalpay = totalPrice()
-    if(!isNaN(enterpay)&&enterpay === totalpay){
+    console.log( totalpay );
+    if(   enterpay == totalpay){
         alert("결제가 완료되었습니다.")
-    }else{"결제 실패"}
+    }else{
+        alert("결제가 실패되었습니다.")
+    }
+
 }
