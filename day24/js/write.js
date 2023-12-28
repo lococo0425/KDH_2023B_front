@@ -40,7 +40,7 @@ function 이미지등록(event){
         console.log(파일읽기객체)
         //3. 읽어온 바이트를 img태그에 출력
         파일읽기객체.onload = function(){
-            document.querySelector('img').src = 파일읽기객체.result
+            document.querySelector('fileImg').src = 파일읽기객체.result
         }
     
 }
