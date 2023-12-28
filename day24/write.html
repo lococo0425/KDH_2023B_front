@@ -5,16 +5,20 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/common.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/write.css'>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src='js/common.js'></script>
-    <script src='js/index.js'></script>
+    <script src='js/write.js'></script>
 </head>
 <body>
     <div id="wrap">
         <div id="header"></div>
-        <div id="main">쓰기
-            
+        <div id="main">
+            <input type="password" placeholder="비밀번호 입력 (수정/삭제)"/>
+            <textarea placeholder="게시물내용입력"></textarea>
+            <input onchange="이미지등록(event)" type="file" accept="image/*"/> <br/>
+            <img /><br/>
+            <button onclick="피드등록()" type="button">피드게시</button>
         </div>
     </div>
 </body>

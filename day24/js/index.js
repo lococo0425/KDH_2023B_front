@@ -142,3 +142,4 @@ function 댓글출력(fno){ // 매개변수 : 출력한 게시물 번호
     }
     return html;
 }
+
