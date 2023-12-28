@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    
+    padding: 10px;
+    list-style: none; /* 글머리 제거 */
+    margin: 0px; padding: 0px;
+    box-sizing: border-box; /* 안쪽 여백 포함 사이즈 */
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#wrap{
+    width: 350px;
+    margin: 0 auto;
+}
+
+#main{
+    padding: 60px 0px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    padding: 30px 0px;
+    border-bottom: solid 1px #e8e8e8;
+    position: fixed; /* 위치 고정  */
+    top : 0px;
+    width: 350px;
+    background-color: white;
+}
+
+#header img{
+    width: 70px;
+}
+
