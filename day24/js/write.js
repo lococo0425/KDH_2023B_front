@@ -29,5 +29,18 @@ function 이미지등록(event){
     //[!] event : 이벤트를 발생한 결과 정보를 객체로 담아두기
     console.log(event)
     console.log(event.target)
-    console.log(event.target.files) //input type file 일때만 가능 
+    console.log(event.target.files) //input type file속성 일때만 가능
+    console.log(event.target.files[0]); //등록된 첨부파일 을 파일 객체로 
+
+    //[1] 첨부파일 input 에 등록된 파일을 바이트로 가져오기 
+        //1.파일 읽기 클래스 new FileReader(); 
+        let 파일읽기객체 = new FileReader(); //파일 읽기 객체 생성 
+        //2.파일을 js로 읽어들이기 
+        파일읽기객체.readAsDataURL(event.target.files[0]);
+        console.log(파일읽기객체)
+        //3. 읽어온 바이트를 img태그에 출력
+        파일읽기객체.onload = function(){
+            document.querySelector('img').src = 파일읽기객체.result
+        }
+    
 }
